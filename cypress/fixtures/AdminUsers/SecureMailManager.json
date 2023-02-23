@@ -1,0 +1,14 @@
+{
+  "username": "Secure Mail Manager",
+  "password": "goanywhere",
+  "authenticationAlias": "",
+  "emailAddress": "AgentManager@gmail.com",
+  "officePhone": "",
+  "mobilePhone": "",
+  "roles": ["Secure Mail Manager"],
+  "groups": [],
+  "domains": ["Default"],
+  "homeDirectory": "",
+  "restrictToHomeDirectory": false,
+  "filePermissions": "Read/Write"
+}

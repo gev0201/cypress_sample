@@ -1,0 +1,14 @@
+{
+  "username": "Project Executor",
+  "password": "goanywhere",
+  "authenticationAlias": "",
+  "emailAddress": "AgentManager@gmail.com",
+  "officePhone": "",
+  "mobilePhone": "",
+  "roles": ["Project Executor"],
+  "groups": [],
+  "domains": ["Default"],
+  "homeDirectory": "",
+  "restrictToHomeDirectory": false,
+  "filePermissions": "Read/Write"
+}

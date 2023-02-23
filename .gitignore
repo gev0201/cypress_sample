@@ -1,0 +1,8 @@
+node_modules
+.idea
+/cypress/downloads
+/cypress/results
+/cypress/reports
+cypress/screenshots
+cypress/videos
+.env.local

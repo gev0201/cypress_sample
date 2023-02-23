@@ -1,0 +1,69 @@
+{
+  "username": "Test_User",
+  "GeneralFields": {
+    "firstName": "First Name",
+    "lastName": "Last Name"
+  },
+  "IpFilter": [],
+  "UserGroups": [],
+  "template": "Web User Template",
+  "VirtualFolder": {
+    "Folders": [
+      "New",
+      "New1"
+    ],
+    "folder1": "All",
+    "folder2": [
+      "List",
+      "Download"
+    ]
+  },
+  "AddressBooks": {
+    "name": [
+      "Test_Address_Book"
+    ],
+    "AvailableMembers": []
+  },
+  "password": "Qa123456",
+  "Features": [
+    "AS2",
+    "AS4",
+    "FTP",
+    "FTPS",
+    "GoFast",
+    "HTTPS",
+    "PeSIT",
+    "SFTP",
+    "Secure Folders",
+    "Secure Forms",
+    "Send Secure Mail",
+    "Send Invitations",
+    "View Activity Report",
+    "GoDrive"
+  ],
+  "GeneralFolders": "All",
+  "SubFolders": [
+    "Create"
+  ],
+  "PasswordOptions": [],
+  "profileSettings": {
+    "firstLastName": {
+      "isRequired": false,
+      "profileUpdate": true,
+      "selfRegistration": true
+    },
+    "organization": {
+      "isRequired": false,
+      "profileUpdate": true,
+      "selfRegistration": true
+    },
+    "phone": {
+      "isRequired": false,
+      "profileUpdate": true,
+      "selfRegistration": true
+    },
+    "email": {
+      "isRequired": false
+    }
+  }
+}

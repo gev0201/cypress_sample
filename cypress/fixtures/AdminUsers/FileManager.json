@@ -1,0 +1,14 @@
+{
+  "username": "File Manager",
+  "password": "goanywhere",
+  "authenticationAlias": "",
+  "emailAddress": "AgentManager@gmail.com",
+  "officePhone": "",
+  "mobilePhone": "",
+  "roles": ["File Manager"],
+  "groups": [],
+  "domains": ["Default"],
+  "homeDirectory": "",
+  "restrictToHomeDirectory": false,
+  "filePermissions": "Read/Write"
+}

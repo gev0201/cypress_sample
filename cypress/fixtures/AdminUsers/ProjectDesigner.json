@@ -1,0 +1,14 @@
+{
+  "username": "Project Designer",
+  "password": "goanywhere",
+  "authenticationAlias": "",
+  "emailAddress": "AgentManager@gmail.com",
+  "officePhone": "",
+  "mobilePhone": "",
+  "roles": ["Project Designer"],
+  "groups": [],
+  "domains": ["Default"],
+  "homeDirectory": "",
+  "restrictToHomeDirectory": false,
+  "filePermissions": "Read/Write"
+}

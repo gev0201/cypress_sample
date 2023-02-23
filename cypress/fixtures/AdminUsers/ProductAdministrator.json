@@ -1,0 +1,14 @@
+{
+  "username": "Product Administrator",
+  "password": "goanywhere",
+  "authenticationAlias": "",
+  "emailAddress": "AgentManager@gmail.com",
+  "officePhone": "",
+  "mobilePhone": "",
+  "roles": ["Product Administrator"],
+  "groups": [],
+  "domains": ["Default"],
+  "homeDirectory": "",
+  "restrictToHomeDirectory": false,
+  "filePermissions": "Read/Write"
+}

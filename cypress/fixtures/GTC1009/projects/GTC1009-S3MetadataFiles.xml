@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="GTC1009-S3MetadataFiles" mainModule="Main" version="2.0" logLevel="verbose">
+	<variable name="bucket" value="GTC1009-S3" description="This value defines the S3 bucket for this project to run in." />
+	<variable name="metaErrorMessage" value="Metadata is inconsistent." />
+	<variable name="fileErrorMessage" value="Retrieved file did not match expected file." />
+	<variable name="download" value="downloadedS3TestFile.txt" />
+	<variable name="helloWorld" value="helloworld.txt" />
+	<variable name="dir" value="automated-testing/GTC1009" />
+	<variable name="key1" value="author" />
+	<variable name="key2" value="testCase" />
+	<variable name="key3" value="color" />
+
+	<module name="Main">
+
+		<createWorkspace version="1.0" />
+
+
+		<callModule label="Call Hello World" module="Hello World" version="1.0" />
+
+	</module>
+
+
+	<module name="Test S3">
+
+		<s3 label="Upload File &amp; Retrieve Metadata" resourceId="${bucket}" version="1.0">
+			<upload sourceFile="${source}" destinationFile="${dir}/${source}">
+				<metadata value="${metaIn1}" key="${key1}" />
+				<metadata value="GTC1009" key="${key2}" />
+				<metadata value="red" key="${key3}" />
+			</upload>
+			<getMetadata file="${dir}/${source}">
+				<metadata name="metaOut1" key="${key1}" />
+				<metadata name="metaOut2" key="${key2}" />
+				<metadata name="metaOut3" key="${key3}" />
+			</getMetadata>
+		</s3>
+
+
+		<callModule label="Call Check Metadata" module="Check Metadata" version="1.0" />
+
+
+		<callModule label="Call Change Metadata" module="Change Metadata" version="1.0" />
+
+
+		<s3 label="Set &amp; Retrieve Metadata" resourceId="${bucket}" version="1.0">
+			<setMetadata file="${dir}/${source}">
+				<metadata value="${metaIn1}" key="${key1}" />
+				<metadata value="${metaIn3}" key="${key3}" />
+			</setMetadata>
+			<getMetadata file="${dir}/${source}">
+				<metadata name="metaOut1" key="${key1}" />
+				<metadata name="metaOut2" key="${key2}" />
+				<metadata name="metaOut3" key="${key3}" />
+			</getMetadata>
+		</s3>
+
+
+		<callModule label="Call Check Metadata" module="Check Metadata" version="1.0" />
+
+
+		<s3 label="Download File" resourceId="${bucket}" version="1.0">
+			<download sourceFile="${dir}/${source}" destinationFile="${download}" whenFileExists="overwrite" />
+		</s3>
+
+
+		<callModule label="Call Check File" module="Check File" version="1.0" />
+
+	</module>
+
+
+	<module name="Set Error Message">
+
+		<setVariable label="set errorMessage" name="errorMessage" value="${message} Expected &quot;${expected}&quot;, but was &quot;${actual}&quot;." version="2.0" />
+
+	</module>
+
+
+	<module name="Check Metadata">
+
+		<setVariable label="set message" name="message" value="Retrieved metadata did not match expected metadata for the first key." version="2.0" />
+
+		<if condition="${metaIn1 &lt;&gt; metaOut1}">
+
+			<setVariable label="set expected" name="expected" value="${metaIn1}" version="2.0" />
+
+
+			<setVariable label="set actual" name="actual" value="${metaOut1}" version="2.0" />
+
+
+			<callModule label="call Set Error Message" module="Set Error Message" version="1.0" />
+
+
+			<raiseError version="1.0">
+				<message>${errorMessage}</message>
+			</raiseError>
+
+		</if>
+		<if condition="${metaIn2 &lt;&gt; metaOut2}">
+
+			<setVariable label="set expected" name="expected" value="${metaIn2}" version="2.0" />
+
+
+			<setVariable label="set actual" name="actual" value="${metaOut1}" version="2.0" />
+
+
+			<callModule label="call Set Error Message" module="Set Error Message" version="1.0" />
+
+
+			<raiseError version="1.0">
+				<message>${errorMessage}</message>
+			</raiseError>
+
+		</if>
+		<if condition="${metaIn3 &lt;&gt; metaOut3}">
+
+			<setVariable label="set expected" name="expected" value="${metaIn3}" version="2.0" />
+
+
+			<setVariable label="set actual" name="actual" value="${metaOut1}" version="2.0" />
+
+
+			<callModule label="call Set Error Message" module="Set Error Message" version="1.0" />
+
+
+			<raiseError version="1.0">
+				<message>${errorMessage}</message>
+			</raiseError>
+
+		</if>
+	</module>
+
+
+	<module name="Change Metadata">
+
+		<setVariable label="Change Author" name="metaIn1" value="Automated Testing" version="2.0" />
+
+
+		<setVariable label="Change Color" name="metaIn3" value="green" version="2.0" />
+
+	</module>
+
+
+	<module name="Check File">
+
+		<setVariable label="set message" name="message" value="Retrieved file did not match expected file." version="2.0" />
+
+
+		<checksum label="set expected" sourceFile="${source}" checksumVariable="expected" version="1.0" />
+
+
+		<checksum label="set actual" sourceFile="${download}" checksumVariable="actual" version="1.0" />
+
+		<if condition="${expected &lt;&gt; actual}">
+
+			<callModule label="call Set Error Message" module="Set Error Message" version="1.0" />
+
+
+			<raiseError version="1.0">
+				<message>${errorMessage}</message>
+			</raiseError>
+
+		</if>
+	</module>
+
+
+	<module name="Hello World" description="Creates helloworld.txt in the project space and then sets the file to the source variable. Also initializes metadata variables to be used in uploading the file.">
+
+		<print label="Create helloWorld file" file="${helloWorld}" version="1.0">
+			<![CDATA[Hello World!]]>
+		</print>
+
+
+		<setVariable label="set Source" name="source" value="${helloWorld}" version="2.0" />
+
+
+		<setVariable label="set metaIn1" name="metaIn1" value="Luke" version="2.0" />
+
+
+		<setVariable label="set metaIn2" name="metaIn2" value="GTC1009" version="2.0" />
+
+
+		<setVariable label="set metaIn3" name="metaIn3" value="red" version="2.0" />
+
+
+		<callModule label="Test" module="Test S3" version="1.0" />
+
+	</module>
+
+	<description>Checks that metadata and file data are preserved when uploading and downloading small files to the S3 bucket.</description>
+</project>

@@ -1,0 +1,270 @@
+{
+  "Agent Manager":{
+    "Home":[],
+    "Services":["Agents"],
+    "Reporting":["Reports"],
+    "Help":["Help Center", "About"]
+  },
+  "Log Viewer": {
+    "Home": [],
+    "Workflows": ["Queued Jobs", "Active Jobs","Completed Jobs"],
+    "Reporting": [
+      "Reports",
+      "Audit Logs"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Dashboard Manager": {
+    "Home": [],
+    "Reporting": [
+      "Reports"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "File Manager": {
+    "Home": [],
+    "Reporting": [
+      "Reports"
+    ],
+    "System": [
+      "File Manager"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Job Manager": {
+    "Home": [],
+    "Workflows": [
+      "Schedules",
+      "Monitors",
+      "Job Queue Manager",
+      "Queued Jobs",
+      "Active Jobs",
+      "Completed Jobs"
+    ],
+    "Reporting": [
+      "Reports",
+      "Audit Logs"
+    ],
+    "System": [
+      "Active Transfers"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Key Manager": {
+    "Home": [],
+    "Reporting": [
+      "Reports"
+    ],
+    "Encryption": [
+      "Key Management System",
+      "File Based Keys"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Product Administrator": {
+    "Home": [],
+    "Workflows": [
+      "Job Queue Manager"
+    ],
+    "Services": [
+      "Service Manager",
+      "Gateway Manager",
+      "GoDrive Settings"
+    ],
+    "Reporting": [
+      "Reports",
+      "Audit Logs",
+      "Global Log Settings",
+      "Audit Log Exemptions"
+    ],
+    "Encryption": [
+      "Key Management System",
+      "Encrypted Folders",
+      "Master Encryption Keys"
+    ],
+    "System": [
+      "Global Settings",
+      "Antivirus Settings",
+      "Admin Server",
+      "Database Configuration",
+      "Cluster Manager",
+      "Custom Tasks",
+      "Add-ons",
+      "System Alerts",
+      "Active Sessions",
+      "Active Transfers",
+      "Tools"
+    ],
+    "Help": [
+      "Help Center",
+      "Diagnostics",
+      "About",
+      "License",
+      "Check for Updates",
+      "Software Library"
+    ]
+  },
+  "Project Designer": {
+    "Home": [],
+    "Workflows": [
+      "Projects"
+    ],
+    "Reporting": [
+      "Reports"
+    ],
+    "Encryption": [
+      "Encryption Tool"
+    ],
+    "System": [
+      "Tools"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Project Executor": {
+    "Home": [],
+    "Workflows": [
+      "Projects",
+      "Queued Jobs",
+      "Active Jobs",
+      "Completed Jobs"
+    ],
+    "Reporting": [
+      "Reports",
+      "Audit Logs"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Resource Manager": {
+    "Home": [],
+    "Resources": [],
+    "Reporting": [
+      "Reports"
+    ],
+    "Encryption": [
+      "Encryption Tool"
+    ],
+    "System": [
+      "Tools"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Secure Forms Manager": {
+    "Home": [],
+    "Services": [
+      "Secure Forms"
+    ],
+    "Reporting": [
+      "Reports",
+      "Audit Logs"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Secure Mail Manager": {
+    "Home": [],
+    "Services": [
+      "Secure Mail"
+    ],
+    "Reporting": [
+      "Reports",
+      "Audit Logs"
+    ],
+    "Help": [
+      "Help Center",
+      "About"
+    ]
+  },
+  "Security Officer": {
+    "Home":[],
+    "Resources":[],
+    "Workflows": ["Projects"],
+    "Services": ["Agents"],
+    "Users": ["Admin Users", "Admin User Groups", "Admin User Templates", "Admin User API Keys", "Admin User Roles", "Admin Security Settings", "Web User Settings", "Web User Self-Registration", "Domains", "Login Settings", "Login Methods"],
+    "Reporting": ["Reports", "Audit Logs"],
+    "Encryption": ["Master Encryption Keys"],
+    "System": ["Security Settings","IP Filter", "Automatic IP Block List"],
+    "Help": ["Help Center", "About"]
+  },
+
+  "Trigger Manager": {
+    "Home": [],
+    "Workflows": ["Triggers"],
+    "Reporting": ["Reports", "Audit Logs"],
+    "Help": ["Help Center", "About"]
+  },
+  "Web User Device Manager": {
+    "Home": [],
+    "Users": ["Web User Devices"],
+    "Reporting": ["Reports", "Audit Logs"],
+    "Help": ["Help Center", "About"]
+  },
+  "Web User Manager": {
+    "Home": [],
+    "Users": ["Web Users", "Web User Groups", "Web User Templates", "Web User Address Books"],
+    "Reporting": ["Reports", "Audit Logs"],
+    "Help": ["Help Center", "About"]
+  },
+
+  "Auditor": {
+    "Home":[],
+    "Resources":[],
+    "Workflows": ["Projects", "Schedules", "Monitors", "Triggers", "Job Queue Manager", "Queued Jobs", "Active Jobs", "Completed Jobs"],
+    "Services": ["Service Manager", "Gateway Manager", "Secure Mail", "Secure Forms","Agents"],
+    "Users": ["Admin Users", "Admin User Groups", "Admin User Templates", "Admin User API Keys", "Admin User Roles", "Web Users", "Web User Groups", "Web User Templates", "Web User Devices", "Web User Address Books", "Domains", "Partners", "Login Methods"],
+    "Reporting": ["Reports", "Service Level Agreements", "Audit Logs", "Audit Log Exemptions"],
+    "Encryption": ["Key Management System", "Encrypted Folders", "Master Encryption Keys"],
+    "System": ["Admin Server", "Database Configuration", "Custom Tasks", "Add-ons", "IP Filter", "Automatic IP Block List", "Active Sessions", "Active Transfers"],
+    "Help": ["Help Center", "About", "License"]
+  },
+
+  "SLA Manager": {
+    "Home": [],
+    "Reporting": ["Reports", "Service Level Agreements","Audit Logs"],
+    "Help": ["Help Center", "About"]
+  },
+
+  "Admin Users": {
+    "Home": [],
+    "Users": ["Admin Users"],
+    "Help": ["Help Center", "About"]
+  },
+
+  "Web Users": {
+    "Home": [],
+    "Users": ["Web Users"],
+    "Help": ["Help Center", "About"]
+  },
+
+  "Partner Manager": {
+    "Home": [],
+    "Users": ["Partners"],
+    "Reporting": ["Reports", "Audit Logs"],
+    "Help": ["Help Center", "About"]
+  }
+}

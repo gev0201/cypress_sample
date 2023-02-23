@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<webUsers class="com.linoma.dpa.commandcenter.codec.WebUserVOListCodec">
+	<webUser>
+		<name>Test_User_XML</name>
+		<description></description>
+		<password>$5$DJNwWXGe81OZNVcZ2Pa8Wg==$JJ/TmeMHn/2mOG59FkHxnPLXeGu/fG6tDScNLdX9TnQ=</password>
+		<changePasswordPermission>false</changePasswordPermission>
+		<as2RequireAuthentication></as2RequireAuthentication>
+		<userSanDnValidationCode>0</userSanDnValidationCode>
+		<passwordExpirationInterval>-1</passwordExpirationInterval>
+		<ghttpsTwoFactorAuthTypeCode></ghttpsTwoFactorAuthTypeCode>
+		<as2MdnApprovalAutomatic></as2MdnApprovalAutomatic>
+		<as2SignatureKeyLocation>KeyVault</as2SignatureKeyLocation>
+		<as2DecryptionKeyPasswordIsEncrypted>true</as2DecryptionKeyPasswordIsEncrypted>
+		<as2MDNSignatureAlgorithmFormatCode></as2MDNSignatureAlgorithmFormatCode>
+		<as2MdnSignatureKeyPasswordIsEncrypted>true</as2MdnSignatureKeyPasswordIsEncrypted>
+		<restrictSharingToAddressBookContacts>false</restrictSharingToAddressBookContacts>
+		<email></email>
+		<phone></phone>
+		<domain>Default</domain>
+		<as2Id></as2Id>
+		<createdBy>root</createdBy>
+		<firstName></firstName>
+		<createdOn>1652175437842</createdOn>
+		<gftpsAuthType>P</gftpsAuthType>
+		<gsftpAuthType>P</gsftpAuthType>
+		<approved>true</approved>
+		<as2WhenFileExist>-1</as2WhenFileExist>
+		<certificateKeyLocation>KeyVault</certificateKeyLocation>
+		<as2RequireEncryption></as2RequireEncryption>
+		<enabled>true</enabled>
+		<ghttpsAuthType>P</ghttpsAuthType>
+		<gas2AuthType>P</gas2AuthType>
+		<as2SignatureAlias></as2SignatureAlias>
+		<forcePasswordChange>false</forcePasswordChange>
+		<gftpesAuthType>P</gftpesAuthType>
+		<as2RequireSignature></as2RequireSignature>
+		<goFastAuthType>P</goFastAuthType>
+		<secureFormPermission>true</secureFormPermission>
+		<ipFilterType>A</ipFilterType>
+		<goDriveDiskQuotaOption>B</goDriveDiskQuotaOption>
+		<servicePermissions>319</servicePermissions>
+		<loginMethod>0</loginMethod>
+		<goDriveDiskSpace>5</goDriveDiskSpace>
+		<maxSessions>-1</maxSessions>
+		<organization></organization>
+		<limitDaysOfWeek>0</limitDaysOfWeek>
+		<passwordHashAlgorithm>7</passwordHashAlgorithm>
+		<inactiveDays>-1</inactiveDays>
+		<lastName></lastName>
+		<loginMethodName>GoAnywhere</loginMethodName>
+		<viewActivityPermission>true</viewActivityPermission>
+		<secureMailPermissions>1</secureMailPermissions>
+		<goDrivePermission>true</goDrivePermission>
+		<inviteUserPermission>true</inviteUserPermission>
+		<loginAttempts>0</loginAttempts>
+		<ipFilterEnabled>false</ipFilterEnabled>
+		<goDriveAccess>F</goDriveAccess>
+		<goDriveDiskSpaceUnit>G</goDriveDiskSpaceUnit>
+		<secureFolderPermission>true</secureFolderPermission>
+		<modifiedOn>1652175437842</modifiedOn>
+		<pastExpiration>false</pastExpiration>
+		<passwordIsEncrypted>true</passwordIsEncrypted>
+		<limitDays>0</limitDays>
+		<limitTime>0</limitTime>
+		<modifiedBy>root</modifiedBy>
+		<gas4AuthType>P</gas4AuthType>
+		<smsCountryName></smsCountryName>
+		<goDriveLinkPermission>false</goDriveLinkPermission>
+		<personalAddressBook>true</personalAddressBook>
+		<webGroups />
+		<ipFilterEntries />
+		<virtualFile>
+			<description>This is the login directory</description>
+			<type>D</type>
+			<diskQuotaSize>100</diskQuotaSize>
+			<diskQuotaOption>B</diskQuotaOption>
+			<filePermissions>0</filePermissions>
+			<folderPermissions>8191</folderPermissions>
+			<applyToSubfolders>true</applyToSubfolders>
+			<diskQuotaUnit>M</diskQuotaUnit>
+			<virtualFiles />
+		</virtualFile>
+		<secureForms />
+	</webUser>
+</webUsers>

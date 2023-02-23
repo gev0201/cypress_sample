@@ -1,0 +1,27 @@
+{
+  "name": "cypress-goanywhere-autotest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^10.7.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-mochawesome-reporter": "^2.4.0",
+    "cypress-multi-reporters": "^1.6.1",
+    "dotenv": "^16.0.1",
+    "junit-report-merger": "^3.0.5",
+    "mocha": "^9.2.2",
+    "mocha-junit-reporter": "^2.0.2",
+    "pg": "^8.8.0",
+    "smtp-tester": "^2.0.0",
+    "xml2js": "^0.4.23"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress-iframe": "^1.0.1"
+  }
+}

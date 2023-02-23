@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<resource class="com.linoma.ga.projects.resources.AmazonS3Resource">
+	<primaryContactName />
+	<primaryContactPhone />
+	<primaryContactEmail />
+	<secondaryContactName />
+	<secondaryContactPhone />
+	<secondaryContactEmail />
+	<resourceName>GTC1009-S3</resourceName>
+	<domainName>Default</domainName>
+	<resourceDescription>S3 resource for the GTC1009 test case</resourceDescription>
+	<accessKey>AKIAJZRFAPEFAO4Y5V6Q</accessKey>
+	<secretKey>QxTM0JuhpeqFdKSYFlSSCawmHOBP3foKksn0ml/WhzmJ5MDMZKs87OEPU07anUD+</secretKey>
+	<secretKeyIsEncrypted>true</secretKeyIsEncrypted>
+	<secretKeyIsRecoverable>false</secretKeyIsRecoverable>
+	<bucketName>linoma-developers</bucketName>
+	<region />
+	<serverSideEncryption />
+	<kmsKeyAlias />
+	<rootDir />
+	<endpoint />
+	<timeout />
+	<uploadPartSize />
+	<proxyType />
+	<proxyHost />
+	<alternateProxyHost />
+	<proxyPort />
+	<proxyUser />
+	<proxyPassword />
+	<proxyPasswordIsEncrypted />
+	<proxyPasswordIsRecoverable />
+	<resolveAtProxy />
+</resource>
